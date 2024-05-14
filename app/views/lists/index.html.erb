@@ -1,0 +1,13 @@
+<div class="container mt-5">
+  <h1>TOUTES MES LISTES</h1>
+
+ <ul>
+  <% @list.each do |list| %>
+    <li><%= list.name%>   >> <%= link_to "VOIR CETTE LISTE EN DETAIL", list_path(list.id) %></li>
+  <% end %>
+ </ul>
+
+  <%= link_to new_list_path do %>
+    <i class="fa-solid fa-plus"></i> Add a new list
+  <% end %>
+</div>
