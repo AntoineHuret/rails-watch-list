@@ -19,9 +19,6 @@ class ListsController < ApplicationController
     redirect_to lists_path
   end
 
-  def edit
-  end
-
   def update
     @list.update(list_params)
     redirect_to list_path(@list)

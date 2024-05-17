@@ -1,9 +1,6 @@
 <div class="container mt-5">
   <div class="d-flex justify-content-between align-items-center mb-4">
     <h1><%= @list.name %></h1>
-    <%= link_to edit_list_path(@list.id), class: 'btn btn-light btn-sm border' do %>
-      <i class="fa fa-pencil"></i> Edit this list
-    <% end %>
 
     <%= link_to new_list_bookmark_path(@list) do %>
     <i class="fa-solid fa-plus"></i> Add a BOOKMARK

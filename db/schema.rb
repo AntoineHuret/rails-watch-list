@@ -33,10 +33,10 @@ ActiveRecord::Schema[7.1].define(version: 2024_05_11_121256) do
   create_table "movies", force: :cascade do |t|
     t.string "title"
     t.string "overview"
+    t.string "poster_url"
     t.float "rating"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "poster_url"
   end
 
   add_foreign_key "bookmarks", "lists"
